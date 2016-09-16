@@ -9,6 +9,7 @@ RUN curl -s https://storage.googleapis.com/golang/go1.2.2.linux-amd64.tar.gz | t
 # prepare go environment
 ENV GOPATH /go
 ENV GOROOT /usr/local/go
+ENV TEST "Dies ist ein Test."
 ENV PATH $PATH:/usr/local/go/bin:/go/bin
 
 # add the current build context
