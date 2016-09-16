@@ -12,10 +12,10 @@ ENV GOROOT /usr/local/go
 ENV PATH $PATH:/usr/local/go/bin:/go/bin
 
 # add the current build context
-ADD . /go/src/github.com/deis/helloworld
+ADD . /go/src/github.com/svenmalvik/helloworld
 
 # compile the binary
-RUN cd /go/src/github.com/deis/helloworld && go install -v .
+RUN cd /go/src/github.com/svenmalvik/helloworld && go install -v .
 
 EXPOSE 80
 
