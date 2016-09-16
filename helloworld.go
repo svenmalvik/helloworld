@@ -21,5 +21,6 @@ func main() {
 
 func hello(w http.ResponseWriter, req *http.Request) {
 	log.Printf("%s %s\n", req.Proto, req.URL)
+  fmt.Fprintln(w, "Hallo")
   fmt.Fprintln(w, os.Getenv("TEST"))
 }
