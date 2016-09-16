@@ -11,7 +11,6 @@ RUN unzip /tmp/envconsul_0.6.1_linux_amd64.zip -d /opt/
 # prepare go environment
 ENV GOPATH /go
 ENV GOROOT /usr/local/go
-ENV TEST "Dies ist ein Test."
 ENV PATH $PATH:/usr/local/go/bin:/go/bin
 
 # add the current build context
