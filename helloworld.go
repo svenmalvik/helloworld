@@ -22,4 +22,5 @@ func main() {
 func hello(w http.ResponseWriter, req *http.Request) {
 	log.Printf("%s %s\n", req.Proto, req.URL)
 	fmt.Fprintln(w, "Welcome!")
+  fmt.Println("GOPATH:", os.Getenv("GOPATH"))
 }
