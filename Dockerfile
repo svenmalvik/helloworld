@@ -5,7 +5,7 @@ RUN apt-get update && apt-get install -qy curl
 
 # install go runtime
 RUN curl -s https://storage.googleapis.com/golang/go1.2.2.linux-amd64.tar.gz | tar -C /usr/local -xz
-RUN wget https://releases.hashicorp.com/envconsul/0.6.1/envconsul_0.6.1_linux_amd64.zip | unzip envconsul_0.6.1_linux_amd64.zip
+RUN wget https://releases.hashicorp.com/envconsul/0.6.1/envconsul_0.6.1_linux_amd64.zip | unzip 
 
 # prepare go environment
 ENV GOPATH /go
